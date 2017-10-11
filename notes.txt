@@ -1,0 +1,24 @@
+Anotações:
+
+Insere algo no final de um arquivo
+echo "alguma coisa" >> nome_do_arquivo.extensao
+
+Controle - Significado
+ \"	Insere o Caractere "
+ \n	Nova Linha (Mesma coisa do ENTER)
+ \r	Retorno de carro
+ \t	Tabulação
+ \$	Insere o Caractere $
+ \\	Insere o Caractere \
+ \0nnn	Caractere ASCII octal
+ \xnn	Caractere ASCII hexadeximal
+
+ Em shell script:
+
+* Aspas simples servem para a expressão ser literalmente o que ela é, sem considerar nome de variáveis.
+* Aspas duplas servem para a expressão converter nomes de variáveis para seu conteudo.
+
+Referências:
+http://www.devmedia.com.br/introducao-ao-shell-script-no-linux/25778
+Cores:
+https://stackoverflow.com/questions/16843382/colored-shell-script-output-library

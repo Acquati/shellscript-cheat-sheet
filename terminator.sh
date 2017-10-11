@@ -1,5 +1,9 @@
 # https://apps.ubuntu.com/cat/applications/precise/terminator/s
-echo "Instalando o Terminator + Oh My ZSH."
+Red="\033[0;31m";
+Gre="\033[0;32m";
+RCol="\033[0m";
+
+echo "$Gre Instalando o Terminator + Oh My ZSH.$RCol"
 sudo apt-get install -y terminator
 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
@@ -21,6 +25,7 @@ rm -rf fonts
 # https://github.com/robbyrussell/oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-subl ~/.zshrc
+echo "$Gre Após a instalação, troque ZSH_THEME=\"robbyrussell\"
+por ZSH_THEME=\"agnoster\""
 
-terminator
+subl ~/.zshrc

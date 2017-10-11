@@ -1,5 +1,9 @@
-echo "Instalando o Laravel globalmente."
+Red="\033[0;31m";
+Gre="\033[0;32m";
+RCol="\033[0m";
+
+echo "$Gre Instalando o Laravel globalmente.$Rcol"
 composer global require "laravel/installer"
-subl ~/.zshrc
-# Adicionr a seguinte linha no final do arquivo que foi aberto:
-# export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+echo '
+# Laravel
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.zshrc
