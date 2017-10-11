@@ -22,3 +22,6 @@ Referências:
 http://www.devmedia.com.br/introducao-ao-shell-script-no-linux/25778
 Cores:
 https://stackoverflow.com/questions/16843382/colored-shell-script-output-library
+
+Delete lines:
+http://www.theunixschool.com/2012/06/sed-25-examples-to-delete-line-or.html
