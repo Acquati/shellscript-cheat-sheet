@@ -8,3 +8,4 @@ composer global require "laravel/installer"
 echo '
 # Laravel
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.zshrc
+laravel -v

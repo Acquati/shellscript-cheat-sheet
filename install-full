@@ -14,5 +14,4 @@ install-composer
 # Instalar Separadamente
 echo "$gre""Install this programs manually:$yel"
 echo "install-terminator"
-# echo "install-php"
 # echo "install-node"

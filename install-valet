@@ -12,3 +12,4 @@ sudo systemctl disable apache2.service
 
 composer global require cpriego/valet-linux
 valet install
+valet -v
