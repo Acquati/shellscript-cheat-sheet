@@ -6,7 +6,8 @@ nor="\033[0m"
 echo "$gre""Full Installation.$nor"
 install-update
 install-sublime
-# install-composer
+install-php
+install-composer
 # install-laravel
 # install-valet
 
