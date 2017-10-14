@@ -25,3 +25,6 @@ https://stackoverflow.com/questions/16843382/colored-shell-script-output-library
 
 Delete lines:
 http://www.theunixschool.com/2012/06/sed-25-examples-to-delete-line-or.html
+
+bom tutorial
+http://linuxcommand.org/lc3_wss0010.php
