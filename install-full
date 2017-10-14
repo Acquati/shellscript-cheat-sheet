@@ -8,7 +8,7 @@ install-update
 install-sublime
 install-php
 install-composer
-# install-laravel
+install-laravel
 # install-valet
 
 # Instalar Separadamente
