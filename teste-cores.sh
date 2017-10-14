@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # variaveis
 corPadrao="\033[0m"
 preto="\033[0;30m"

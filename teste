@@ -1,6 +1,0 @@
-red="\033[0;31m"
-gre="\033[0;32m"
-nor="\033[0m"
-yel="\033[1;33m"
-
-echo "$red""Hello World!"

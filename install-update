@@ -1,0 +1,10 @@
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
+
+echo "$gre""Update/Upgrade and installing git and curl.$nor"
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get install -y git
+sudo apt-get install -y curl

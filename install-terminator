@@ -1,9 +1,10 @@
 # https://apps.ubuntu.com/cat/applications/precise/terminator/s
-Red="\033[0;31m";
-Gre="\033[0;32m";
-RCol="\033[0m";
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
 
-echo "$Gre Instalando o Terminator + Oh My ZSH.$RCol"
+echo "$gre""Instalando o Terminator + Oh My ZSH.$nor"
 sudo apt-get install -y terminator
 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH

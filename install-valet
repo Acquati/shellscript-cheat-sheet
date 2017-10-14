@@ -1,9 +1,10 @@
 # https://cpriego.github.io/valet-linux/
-Red="\033[0;31m";
-Gre="\033[0;32m";
-RCol="\033[0m";
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
 
-echo "$Gre Instalando o Valet.$RCol"
+echo "$gre""Installing Valet.$nor"
 sudo apt-get install -y network-manager libnss3-tools jq xsel
 
 sudo systemctl stop apache2.service

@@ -1,8 +1,9 @@
-Red="\033[0;31m";
-Gre="\033[0;32m";
-RCol="\033[0m";
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
 
-echo "$Gre Instalando o Laravel globalmente.$Rcol"
+echo "$gre""Instalando o Laravel globalmente.$nor"
 composer global require "laravel/installer"
 echo '
 # Laravel

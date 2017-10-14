@@ -1,24 +1,25 @@
 # https://websiteforstudents.com/installing-php-7-0-7-1-ubuntu-17-04/Red="\033[0;31m"
-Red="\033[0;31m";
-Gre="\033[0;32m";
-RCol="\033[0m";
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
 
 case $1 in
 	'')
-	    echo "$Red Nenhum argumento detectado!$RCol
+	    echo "$red""Nenhum argumento detectado!$yel
 Instala o PHP 7.0 + pacotes:
 ./php.sh 70
 Instala o PHP 7.1 + pacotes:
-./php.sh 71"
+./php.sh 71$nor"
 		;;
 	70)
-	    echo "$Gre Instalando o PHP 7.0 + pacotes.$RCol"
+	    echo "$gre""Instalando o PHP 7.0 + pacotes.$nor"
 	    sudo apt-get -y update
 		sudo apt-get install -y php php-cli php-common php-mbstring php-gd php-intl php-xml php-mysql php-mcrypt php-zip php-sqlite3 php-mysql php-pgsql
 		php -v
 	    ;;
 	71)
-	    echo "$Gre Instalando o PHP 7.1 + pacotes.$RCol"
+	    echo "$gre""Instalando o PHP 7.1 + pacotes.$nor"
 	    sudo apt-get install -y python-software-properties
 		sudo add-apt-repository -y ppa:ondrej/php
 		sudo apt-get -y update
@@ -64,10 +65,10 @@ Instala o PHP 7.1 + pacotes:
 		php -v
 		;;
 	*)
-		echo "$Red Argumento invalido!$RCol
+		echo "$red""Argumento invalido!$yel
 Instala o PHP 7.0 + pacotes:
 ./php.sh 70
 Instala o PHP 7.1 + pacotes:
-./php.sh 71"
+./php.sh 71$nor"
 		;;
 esac

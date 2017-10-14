@@ -7,13 +7,13 @@
 # https://jquery.com/
 red="\033[0;31m"
 gre="\033[0;32m"
+yel="\033[0;33m"
 nor="\033[0m"
-yel="\033[1;33m"
 
-echo "$gre""Initializing the template for front-end on Laravel 5.4 project. Created by""$yel Grupo Tesseract"
+echo "$gre""Initializing the template for front-end on Laravel 5.4 project. Created by""$nor Grupo Tesseract"
 echo "$gre""Make shure to run composer install and npm install on this project before running this program.\n"
 
-echo "$nor""Deleting the welcome route and creating the home route."
+echo "$yel""Deleting the welcome route and creating the home route."
 sed -i '14,17d' routes/web.php
 echo "Route::get('/', function () {
     return view('home');

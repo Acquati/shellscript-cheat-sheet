@@ -1,27 +1,28 @@
 #blau blauexport PATH="$HOME/.config/composer/vendor/bin:$PATH"
-Red="\033[0;31m"
-Gre="\033[0;32m";
-RCol="\033[0m"
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
 
 case $1 in
 	'')
-	    echo "$Red Nenhum argumento detectado!$RCol
+	    echo "$red""Nenhum argumento detectado!$yel
 Instala o PHP 7.0 + pacotes:
 ./php.sh 70
 Instala o PHP 7.1 + pacotes:
-./php.sh 71"
+./php.sh 71$nor"
 		;;
 	70)
-	    echo "$Gre Instalando o PHP 7.0 + pacotes."
+	    echo "$gre""Instalando o PHP 7.0 + pacotes.$nor"
 	    ;;
 	71)
-	    echo "$Gre Instalando o PHP 7.1 + pacotes."
+	    echo "$gre""Instalando o PHP 7.1 + pacotes.$nor"
 		;;
 	*)
-		echo "$Red Argumento invalido!$RCol
+		echo "$red""Argumento invalido!$yel
 Instala o PHP 7.0:
 ./php.sh 70
 Instala o PHP 7.1:
-./php.sh 71"
+./php.sh 71$nor"
 		;;
 esac
