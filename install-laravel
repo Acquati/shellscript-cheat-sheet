@@ -3,7 +3,7 @@ gre="\033[0;32m"
 yel="\033[0;33m"
 nor="\033[0m"
 
-echo "$gre""Instalando o Laravel globalmente.$nor"
+echo "$gre""Installing Laravel.$nor"
 composer global require "laravel/installer"
 echo '
 # Laravel

@@ -1,0 +1,26 @@
+red="\033[0;31m"
+gre="\033[0;32m"
+yel="\033[0;33m"
+nor="\033[0m"
+
+echo "$gre""Installing Homestead.$nor"
+echo 'deb http://download.virtualbox.org/virtualbox/debian zesty contrib' >> /etc/apt/sources.list
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo apt-get -y update
+sudo apt-get install -y virtualbox-5.1
+sudo apt-get install -y dkms
+
+# Install Vagrant
+# https://www.vagrantup.com/downloads.html
+
+vagrant box add laravel/homestead
+
+git clone https://github.com/laravel/homestead.git $HOME/Homestead
+cd $HOME/Homestead
+git checkout v6.3.0
+bash init.sh
+subl Homestead.yaml
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add -k ~/.ssh/id_rsa
