@@ -21,6 +21,28 @@ git checkout v6.3.0
 bash init.sh
 subl Homestead.yaml
 
+mkdir $HOME/code
+echo '
+192.168.10.10  teste.dev' >> /etc/hosts
+sites:
+    - map: teste.dev
+      to: /home/vagrant/code/teste/public
+
+cd $HOME/code
+laravel new teste
+sites:
+    - map: homestead.localhost
+      to: /home/vagrant/code/teste/public
+
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 eval "$(ssh-agent -s)"
 ssh-add -k ~/.ssh/id_rsa
+
+# Create the virtual machine
+vagrant up
+# Reload the hots
+vagrant reload --provision
+# Enter in the virtual machine
+vagrant ssh
+# Destroy the virtual machine
+vagrant destroy --force
