@@ -4,13 +4,12 @@ gre="\033[0;32m"
 yel="\033[0;33m"
 nor="\033[0m"
 
-case $1 in
+echo "$yel""Please enter some input: "
+read input_variable
+echo "You entered: $input_variable"
+case $input_variable in
 	'')
-	    echo "$red""Nenhum argumento detectado!$yel
-Instala o PHP 7.0 + pacotes:
-./php.sh 70
-Instala o PHP 7.1 + pacotes:
-./php.sh 71$nor"
+	    echo "$red""No arguments detected!$nor"
 		;;
 	70)
 	    echo "$gre""Instalando o PHP 7.0 + pacotes.$nor"
@@ -19,10 +18,6 @@ Instala o PHP 7.1 + pacotes:
 	    echo "$gre""Instalando o PHP 7.1 + pacotes.$nor"
 		;;
 	*)
-		echo "$red""Argumento invalido!$yel
-Instala o PHP 7.0:
-./php.sh 70
-Instala o PHP 7.1:
-./php.sh 71$nor"
+		echo "$red""Invalid argument!$nor"
 		;;
 esac
