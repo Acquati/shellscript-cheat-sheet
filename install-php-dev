@@ -1,8 +1,5 @@
+#!/bin/bash
 # https://websiteforstudents.com/installing-php-7-0-7-1-ubuntu-17-04/
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
 
 case $1 in
 	'')

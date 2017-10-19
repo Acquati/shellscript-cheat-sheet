@@ -1,10 +1,7 @@
+#!/bin/bash
 # http://yoember.com/nodejs/the-best-way-to-install-node-js/
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
 
-echo "$Gre Instalando o Node.js + NPM.$RCol"
+echo "Instalando o Node.js + NPM."
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"

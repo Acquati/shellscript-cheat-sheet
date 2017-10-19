@@ -1,11 +1,7 @@
+#!/bin/bash
 # https://laravel-news.com/valet-for-ubuntu-linux
 # https://cpriego.github.io/valet-linux/
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
-
-echo "$gre""Installing Valet.$nor"
+echo "Installing Valet."
 sudo apt-get install -y network-manager libnss3-tools jq xsel
 composer global require cpriego/valet-linux
 valet install

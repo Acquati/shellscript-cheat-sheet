@@ -1,8 +1,5 @@
+#!/bin/bash
 # https://getcomposer.org/download/
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
 
 echo "$gre""Installing Composer.$nor"
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

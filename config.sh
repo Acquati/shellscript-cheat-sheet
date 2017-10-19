@@ -1,9 +1,6 @@
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
+#!/bin/bash
 
-echo "$gre""Writing the shellscript foulder into .zshrc \$PATH.$nor"
+echo "Writing the shellscript foulder into .zshrc \$PATH"
 echo '
 # Installer Tesseract
 export PATH="$HOME/bin/shellscript:$PATH"' >> ~/.zshrc

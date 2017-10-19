@@ -1,9 +1,6 @@
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
+#!/bin/bash
 
-echo "$gre""Installing Homestead.$nor"
+echo "Installing Homestead."
 echo 'deb http://download.virtualbox.org/virtualbox/debian zesty contrib' >> /etc/apt/sources.list
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo apt-get -y update

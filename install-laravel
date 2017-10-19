@@ -1,12 +1,9 @@
-red="\033[0;31m"
-gre="\033[0;32m"
-yel="\033[0;33m"
-nor="\033[0m"
+#!/bin/bash
 
-echo "$gre""Installing Laravel.$nor"
+echo "Installing Laravel."
 composer global require "laravel/installer"
 echo '
 # Laravel
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.zshrc
 
-echo "$gre""Done, close and open your terminal to use laravel command globaly.$nor"
+echo "Done, close and open your terminal to use laravel command globaly."
