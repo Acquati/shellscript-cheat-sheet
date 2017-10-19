@@ -1,3 +1,14 @@
+Ordem de instalação:
+./install-update
+./install-terminator
+./config.sh
+install-sublime
+install-php
+install-composer
+install-laravel
+install-node
+install-homestead
+
 Anotações:
 
 Insere algo no final de um arquivo

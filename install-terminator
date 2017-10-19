@@ -24,7 +24,7 @@ rm -rf fonts
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Após a instalação, execute no terminal:
-# subl ~/.zshrc
+# gedit ~/.zshrc
 # Troque ZSH_THEME=\"robbyrussell\"
 # Por ZSH_THEME=\"agnoster\""
 # Abra o Terminator:
